@@ -13,17 +13,18 @@ yarn-error.log*
 pnpm-debug.log*
 yarn.lock
 package-lock.json
+bun.lock
 
 
 # environment variables
 .env
+.env.local
 .env.production
+
+.vscode/
 
 # macOS-specific files
 .DS_Store
 
 # ignore .astro directory
 .astro
-
-# ide
-.idea/

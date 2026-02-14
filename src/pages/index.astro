@@ -1,10 +1,10 @@
 ---
-import ImageMod from "@/components/ImageMod.astro";
+import ImageMod from "@components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { getListPage } from "@/lib/contentParser.astro";
 import { markdownify } from "@/lib/utils/textConverter";
-import CallToAction from "@/partials/CallToAction.astro";
-import Testimonial from "@/partials/Testimonial.astro";
+import CallToAction from "@partials/CallToAction.astro";
+import Testimonial from "@partials/Testimonial.astro";
 import { FaCheck } from "react-icons/fa";
 
 const homepage = await getListPage("homepage", "-index");

@@ -7,13 +7,10 @@
   "packageManager": "yarn@1.22.22",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"node scripts/themeGenerator.js --watch\" \"yarn generate-json && astro dev\"",
-    "build": "node scripts/themeGenerator.js && yarn generate-json && astro build",
+    "dev": "astro dev",
+    "build": "astro build",
     "preview": "astro preview",
-    "check": "astro check",
-    "format": "prettier -w ./src",
-    "generate-json": "node scripts/jsonGenerator.js",
-    "remove-darkmode": "node scripts/removeDarkmode.js && yarn format"
+    "check": "astro check"
   },
   "dependencies": {
     "@astrojs/check": "0.9.6",
@@ -47,11 +44,6 @@
     "@types/node": "25.0.9",
     "@types/react": "19.2.8",
     "@types/react-dom": "19.2.3",
-    "concurrently": "^9.2.1",
-    "eslint": "^9.39.2",
-    "prettier": "^3.8.0",
-    "prettier-plugin-astro": "^0.14.1",
-    "prettier-plugin-tailwindcss": "^0.7.2",
     "tailwind-bootstrap-grid": "^6.0.0",
     "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
